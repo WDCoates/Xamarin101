@@ -7,25 +7,16 @@ using Notes.Data;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Notes
 {
-    public partial class App : Application
+    public partial class App
     {
         private static NoteDatabase _database;
 
         //public static string FolderPath { get; private set;}
 
-        public static NoteDatabase Database
-        {
-            get
-            {
-                if (_database == null)
-                {
-                    _database = new NoteDatabase(Path.Combine(
-                        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
-                }
+        public static NoteDatabase Database =>
+            _database ?? (_database = new NoteDatabase(Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3")));
 
-                return _database;
-            }
-        }
         public App()
         {
             InitializeComponent();

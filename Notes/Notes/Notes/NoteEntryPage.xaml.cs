@@ -1,13 +1,11 @@
 ﻿using System;
-using System.IO;
-using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Notes.Models;
 
 namespace Notes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NoteEntryPage : ContentPage
+    public partial class NoteEntryPage
     {
         public NoteEntryPage()
         {
