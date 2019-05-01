@@ -7,11 +7,12 @@
         <Thickness x:Key="PageMargin">20</Thickness>
 
         <!-- Colours -->
-        <Color x:Key="AppBackgroundColor">WhiteSmoke</Color>
-        <Color x:Key="iOSNavigationBarColor">WhiteSmoke</Color>
+        <Color x:Key="AppBackgroundColor">Gray</Color>
+        <Color x:Key="iOSNavigationBarColor">#FF2196F3</Color>
         <Color x:Key="AndroidNavigationBarColor">#FF2196F3</Color>
-        <Color x:Key="iOSNavigationBarTextColor">Black</Color>
-        <Color x:Key="AndroidNavigationBarTextColor">#FF000000</Color>
+        <Color x:Key="iOSNavigationBarTextColor">White</Color>
+        <Color x:Key="AndroidNavigationBarTextColor">White</Color>
+        
 
         <!-- Implicit styles-->
         <Style TargetType="{x:Type NavigationPage}">
