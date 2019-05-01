@@ -7,7 +7,7 @@ using Notes.Data;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Notes
 {
-    public partial class App
+    public partial class XApp
     {
         private static NoteDatabase _database;
 
@@ -17,7 +17,7 @@ namespace Notes
             _database ?? (_database = new NoteDatabase(Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3")));
 
-        public App()
+        public XApp()
         {
             InitializeComponent();
             //FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));

@@ -19,7 +19,7 @@ namespace Notes
             //if (string.IsNullOrWhiteSpace(note.Filename))
             //{
             //    //Save
-            //    var fileName = Path.Combine(App.FolderPath, $"{Path.GetRandomFileName()}.notes.txt");
+            //    var fileName = Path.Combine(XApp.FolderPath, $"{Path.GetRandomFileName()}.notes.txt");
             //    File.WriteAllText(fileName, note.Text);
             //}
             //else
@@ -29,7 +29,7 @@ namespace Notes
             //}
 
             note.Date = DateTime.UtcNow;
-            await App.Database.SaveNoteAsync(note);
+            await XApp.Database.SaveNoteAsync(note);
             await Navigation.PopAsync();
         }
 
@@ -41,7 +41,7 @@ namespace Notes
             //{
             //    File.Delete(note.Filename);
             //}
-            await App.Database.DeleteNoteAsync(note);
+            await XApp.Database.DeleteNoteAsync(note);
             await Navigation.PopAsync();
         }
     }

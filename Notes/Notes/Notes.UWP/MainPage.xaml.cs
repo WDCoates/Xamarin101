@@ -21,7 +21,7 @@ namespace Notes.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Notes.App());
+            LoadApplication(new Notes.XApp());
         }
     }
 }

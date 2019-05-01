@@ -18,7 +18,7 @@ namespace Notes
             base.OnAppearing();
 
             //var notes = new List<Note>();
-            //var files = Directory.EnumerateFiles(App.FolderPath, $"*.notes.txt");
+            //var files = Directory.EnumerateFiles(XApp.FolderPath, $"*.notes.txt");
             //foreach (var filename in files)
             //{
             //    notes.Add(new Note
@@ -26,7 +26,7 @@ namespace Notes
             //}
             //listView.ItemsSource = notes.OrderBy(o => o.Date).ToList();
 
-            listView.ItemsSource = await App.Database.GetNotesAsync();
+            listView.ItemsSource = await XApp.Database.GetNotesAsync();
         }
 
         async void OnNoteAddClicked(object sender, EventArgs e)
