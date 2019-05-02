@@ -24,6 +24,10 @@
             <Label Text="Label Text Can You See It?"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Editor Placeholder="Subject"
+                    Text="{Binding Subject}"
+                    HeightRequest="35"
+                    />
             <Editor Placeholder="Enter Note Here..."
                     Text="{Binding Text}"
                     HeightRequest="100" />
