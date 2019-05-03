@@ -20,8 +20,8 @@
             ItemSelected="OnListViewItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Text}"
-                            Detail="{Binding Date}" />
+                    <TextCell Text="{Binding Subject}"
+                            Detail="{Binding Text}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
