@@ -4,11 +4,12 @@
              xmlns:local="clr-namespace:Layouts"
              x:Class="Layouts.MainPage">
 
-    <StackLayout>
+    <StackLayout Margin="20, 35, 20, 25" Padding="10" Spacing="10" Orientation="Horizontal">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="The StackLayout has its Margin property set, to control the rendering position of the StackLayout." />
+        <Label Text="The Padding property can be set to specify the distance between the StackLayout and its children." />
+        <Label Text="The Spacing property can be set to specify the distance between views in the StackLayout." />
+
     </StackLayout>
 
 </ContentPage>
