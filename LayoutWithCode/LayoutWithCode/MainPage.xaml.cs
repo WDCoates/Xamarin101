@@ -21,7 +21,7 @@ namespace LayoutWithCode
                 {
                     new Label
                     {
-                        Text = "This is done done through code!",
+                        Text = "This is has been done through code!",
                         HorizontalOptions = LayoutOptions.Start
                     }
                 }
@@ -30,11 +30,30 @@ namespace LayoutWithCode
             stackLayout01.Children.Add(new Label
             {
                 Text = "This is also done done through code!",
-                HorizontalOptions = LayoutOptions.End,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                TextColor = Color.Green,
+                FontAttributes = FontAttributes.Italic,
+                FontSize = 22,
+                TextDecorations = TextDecorations.Underline,
                 BackgroundColor = Color.Yellow
             });
 
-            this.Content = stackLayout01;
+
+            stackLayout01.Children.Add(new Label
+            {
+                TextColor = Color.Gray,
+                //FontSize = 20,
+                FormattedText = new FormattedString
+                {
+                    Spans =
+                    {
+                        new Span {Text = "This has stuff in it "},
+                        new Span {Text = "words that have emphasis!", FontAttributes = FontAttributes.Bold, TextDecorations = TextDecorations.Underline/*, FontSize = 20*/}
+                    }
+                }
+            });
+
+                this.Content = stackLayout01;
         }
     }
 }
