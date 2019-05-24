@@ -53,7 +53,73 @@ namespace LayoutWithCode
                 }
             });
 
-                this.Content = stackLayout01;
+            this.Content = stackLayout01;
+
+            switch (Device.RuntimePlatform)
+
+            {
+
+                case Device.iOS:
+
+                    this.BackgroundColor = Color.Black;
+
+                    break;
+
+                case Device.Android:
+
+                    this.BackgroundColor = Color.Red;
+
+                    break;
+
+
+                default:
+
+                    this.BackgroundColor = Color.Yellow;
+
+                    break;
+
+            }
+
+            Editor m1 = new Editor
+            {
+                Placeholder = "..."
+            };
+
+            m1.HeightRequest = 100;
+            m1.TextChanged += e1_TextChanged;
+            stackLayout01.Children.Add(m1);
+
+
+            //https://commons.wikimedia.org/wiki/Main_Page useful source of free to use images.
+
+            Image i1 = new Image
+            {
+                HeightRequest = 200,
+                Source =
+                    "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
+            };
+            //i1.WidthRequest = 
+            stackLayout01.Children.Add(i1);
+
+            Image i2 = new Image
+            {
+                HeightRequest = 200,
+                Source =
+                    "FordGTBlueWS.jpg"
+            };
+            stackLayout01.Children.Add(i2);
+
+        }
+
+        public void e1_TextChanged(object sender, TextChangedEventArgs ea)
+        {
+            var o = ea.OldTextValue;
+            var n = ea.NewTextValue;
+        }
+
+        public void e1_OnEntryCompleted(object sender, EventArgs ea)
+        {
+            var t = (sender as Entry).Text;
         }
     }
 }

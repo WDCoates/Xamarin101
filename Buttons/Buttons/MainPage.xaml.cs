@@ -52,53 +52,9 @@ namespace Buttons
             e1.Completed += e1_OnEntryCompleted;
 
 
-            Editor m1 = new Editor
-            {
-                Placeholder = "..."
-            };
+            
 
-            m1.HeightRequest = 100;
-            m1.TextChanged += e1_TextChanged;
-            sL.Children.Add(m1);
-
-
-            //https://commons.wikimedia.org/wiki/Main_Page useful source of free to use images.
-
-            Image i1 = new Image
-            {
-                HeightRequest = 200,
-                Source =
-                    "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"                
-            };
-
-            //i1.WidthRequest = 
-
-            sL.Children.Add(i1);
-
-            switch (Device.RuntimePlatform)
-
-            {
-
-                case Device.iOS:
-
-                    this.BackgroundColor = Color.Black;
-
-                    break;
-
-                case Device.Android:
-
-                    this.BackgroundColor = Color.Red;
-
-                    break;
-
-                
-                default:
-
-                    this.BackgroundColor = Color.Yellow;
-
-                    break;
-
-            }
+            
         }
 
         public void btn_Clicked(object sender, EventArgs ea)
