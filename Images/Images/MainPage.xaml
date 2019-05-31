@@ -9,6 +9,9 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-    </StackLayout>
 
+        <Image Source="{OnPlatform iOS=HeadShot, Android=HeadShot, UWP=./Assets/Images/HeadShot.png}"
+           WidthRequest="{OnPlatform iOS=300, Android=250, UWP=250}"
+           HorizontalOptions="Center" />
+    </StackLayout>
 </ContentPage>
