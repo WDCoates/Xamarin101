@@ -10,7 +10,7 @@
         <Label Text="Welcome to Xamarin.Forms 101!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-
+        <!-- When Image Property Build Action is 'Content' use UWP=./Assets/Images/Name.ext-->
         <Image 
             VerticalOptions="FillAndExpand"
             HorizontalOptions="{OnPlatform Default=Center}"
