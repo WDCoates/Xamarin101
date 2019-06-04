@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ListViews"
              x:Class="ListViews.MainPage">
 
     <StackLayout Margin="20, 35, 20, 20">
         <!-- Place new controls here -->
-        <!--<Label Text="Lists!" 
+        <ListView ItemsSource="{Binding Monkeys}" />
+        <Label Text="Lists!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <ListView>
@@ -21,14 +21,29 @@
                     <x:String>Japanese Macaque</x:String>
                 </x:Array>
             </ListView.ItemsSource>
-        </ListView>-->
-
-        <Label Text="List from source in code!" 
-               HorizontalOptions="Center" />
-        <ListView ItemsSource="{Binding Monkeys}" HorizontalOptions="Start">
         </ListView>
+        <!-- Bound controls here -->
+        <Label Text="{Binding bTextStart}" 
+               HorizontalOptions="Center" />
+        <ListView HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+            <ListView.ItemsSource>
+                <Binding Path="Monkeys" />
+            </ListView.ItemsSource>
+        </ListView>
+        <Slider Maximum="360"
+                VerticalOptions="CenterAndExpand" />
+        <Label Text="{Binding bTextEnd}"
+               HorizontalOptions="Center" />
 
-
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>One</x:String>
+                    <x:String>Two</x:String>
+                    <x:String>Three</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
     </StackLayout>
 
 </ContentPage>
