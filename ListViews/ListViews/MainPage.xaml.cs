@@ -25,14 +25,14 @@ namespace ListViews
                 new Monkey
                 {
                     Name = "Blue Nosed Baboon",
-                    Location = "Africa & Asia"
-                    //ImageUrl =
-                    //    "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
+                    Location = "Africa & Asia",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/2/27/Baby_ginger_monkey.jpg"
                 },
                 new Monkey
                 {
                    Name = "Black Eyed Baboon",
-                   Location = "NE England"
+                   Location = "NE England",
+                   ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/9/93/Mandril.jpg"
                 }
             };
 

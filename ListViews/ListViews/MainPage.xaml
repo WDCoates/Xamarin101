@@ -23,13 +23,30 @@
             </ListView.ItemsSource>
         </ListView>
         <!-- Bound controls here -->
-        <Label Text="{Binding bTextStart}" 
-               HorizontalOptions="Center" />
-        <ListView HorizontalOptions="CenterAndExpand" BackgroundColor="Yellow">
-            <ListView.ItemsSource>
-                <Binding Path="Monkeys"/>
-            </ListView.ItemsSource>
+        <Label Text="{Binding bTextStart}" HorizontalOptions="Center" />
+
+        <ListView ItemsSource="{Binding Monkeys}" HasUnevenRows="True" ItemSelected="OnMonkeyList1Selected" ItemTapped="OnMonkeyList1Tapped" HorizontalOptions="CenterAndExpand" BackgroundColor="Yellow">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="60" WidthRequest="60" />
+                            <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold" />
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Location}" VerticalOptions="End" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
+        
         <Slider Maximum="360"
                 VerticalOptions="CenterAndExpand" />
         <Label Text="{Binding bTextEnd}"
