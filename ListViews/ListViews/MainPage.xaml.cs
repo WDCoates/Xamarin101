@@ -40,5 +40,16 @@ namespace ListViews
 
             BindingContext = this;
         }
+
+        //"OnMonkeyList1Selected" ItemTapped="OnMonkeyList1Tapped"/
+        void OnMonkeyList1Selected(object mLIst1, SelectedItemChangedEventArgs m)
+        {
+            Monkey selMonkey = m.SelectedItem as Monkey;
+        }
+
+        void OnMonkeyList1Tapped(object mList1, ItemTappedEventArgs m)
+        {
+            Monkey tappedItem = m.Item as Monkey;
+        }
     }
 }

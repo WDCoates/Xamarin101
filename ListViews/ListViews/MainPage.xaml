@@ -5,7 +5,7 @@
 
     <StackLayout Margin="20, 35, 20, 20">
         <!-- Place new controls here -->
-        <ListView ItemsSource="{Binding Monkeys}" />
+        <ListView ItemsSource="{Binding Monkeys}" ItemSelected="OnMonkeyList1Selected" ItemTapped="OnMonkeyList1Tapped"/>
         <Label Text="Lists!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
@@ -25,9 +25,9 @@
         <!-- Bound controls here -->
         <Label Text="{Binding bTextStart}" 
                HorizontalOptions="Center" />
-        <ListView HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+        <ListView HorizontalOptions="CenterAndExpand" BackgroundColor="Yellow">
             <ListView.ItemsSource>
-                <Binding Path="Monkeys" />
+                <Binding Path="Monkeys"/>
             </ListView.ItemsSource>
         </ListView>
         <Slider Maximum="360"
