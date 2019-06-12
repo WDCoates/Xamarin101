@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="T09_Alerts.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T09_Alerts.UWP"
+    RequestedTheme="Light">
+
+</Application>

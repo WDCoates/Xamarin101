@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:T09_Alerts"
+             x:Class="T09_Alerts.MainPage">
+
+    <StackLayout Margin="10, 40" Padding="0, 10">   <!--Thickness is 1,2 (L&R, Top&Bot) or 4 (L,Top,R,Bottom)-->
+        <!-- Place new controls here -->
+        <Label  x:Name="L1" Text="Welcome to Xamarin.Forms Alerts!"/>
+        <Button x:Name="B1" Text="Display Simple Alert" Clicked="B1_Clicked"></Button>
+        <Button x:Name="B2" Text="Ask A Simple Question" Clicked="B2_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
