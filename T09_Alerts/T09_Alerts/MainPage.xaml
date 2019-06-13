@@ -9,6 +9,8 @@
         <Label  x:Name="L1" Text="Welcome to Xamarin.Forms Alerts!"/>
         <Button x:Name="B1" Text="Display Simple Alert" Clicked="B1_Clicked"></Button>
         <Button x:Name="B2" Text="Ask A Simple Question" Clicked="B2_Clicked"></Button>
+        <Button x:Name="B3" Text="Display Actions" Clicked="B3_Clicked"></Button>
+        <Label x:Name="Action" Text="Action Here..."></Label>
     </StackLayout>
 
 </ContentPage>

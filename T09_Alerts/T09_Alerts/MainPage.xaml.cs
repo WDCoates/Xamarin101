@@ -28,5 +28,11 @@ namespace T09_Alerts
             bool resp = await DisplayAlert("Save Me?", "Would you like tis saved", "Yes", "No");
             Current.L1.Text = "Save data: " + resp;
         }
+
+        private async void B3_Clicked(object sender, EventArgs e)
+        {
+            string action = await DisplayActionSheet("Do What?", "Cancel", null, "Email", "Shout", "Letter");
+            Current.Action.Text = action;
+        }
     }
 }
