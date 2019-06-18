@@ -8,6 +8,9 @@ namespace T10_LifeCycle
 {
     public partial class App : Application
     {
+        private const string displayText = "Display Some Crap!";
+        public string DisplayText { get; set; }
+
         public App()
         {
             InitializeComponent();
@@ -19,12 +22,18 @@ namespace T10_LifeCycle
         {
             Console.WriteLine("OnStart");
             Debug.WriteLine("Started!");
+
+            if (Properties.ContainsKey(displayText))
+            {
+                DisplayText = (string) Properties[displayText];
+            }
         }
 
         protected override void OnSleep()
         {
             Console.WriteLine("OnSleep");
             Debug.WriteLine("OnSleep");
+            Properties[displayText] = DisplayText;
         }
 
         protected override void OnResume()

@@ -13,5 +13,17 @@ namespace T10_LifeCycle
         {
             InitializeComponent();
         }
+
+        private void Entry_Completed(object sender, EventArgs e)
+        {
+            (Application.Current as App).DisplayText = TextEntry.Text;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            TextEntry.Text = (Application.Current as App).DisplayText;
+        }
     }
 }

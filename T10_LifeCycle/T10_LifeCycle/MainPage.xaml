@@ -9,6 +9,7 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="TextEntry" Placeholder="Enter your text here" Completed="Entry_Completed"/>
     </StackLayout>
 
 </ContentPage>
