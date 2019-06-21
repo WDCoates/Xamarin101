@@ -12,6 +12,8 @@ namespace Grids
         public MainPage()
         {
             InitializeComponent();
+            tTest.Text = $"What the fuck is this all about then!";
+
         }
     }
 }
