@@ -10,7 +10,6 @@ namespace T12_WebService
         {
             InitializeComponent();
             _restService = new RestService();
-            BindingContext = this;
         }
 
         private async void GetWeather_Clicked(object sender, System.EventArgs e)
@@ -19,6 +18,7 @@ namespace T12_WebService
             {
                 WeatherData weatherData =
                     await _restService.GetWeatherDataAsync(GenerateRequestUri(Constants.OpenWeatherMapEndpoint));
+                BindingContext = weatherData;
             }
 
         }
