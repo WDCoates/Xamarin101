@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts.Android", "Layouts\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts.UWP", "Layouts\Layouts.UWP\Layouts.UWP.csproj", "{777ACB77-B244-47EB-B5C2-4F20F9CB195F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts", "Layouts\Layouts\Layouts.csproj", "{5ECE1E59-0D15-40B3-9EBF-FC2C082ACA4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layouts", "Layouts\Layouts\Layouts.csproj", "{5ECE1E59-0D15-40B3-9EBF-FC2C082ACA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolKit", "ToolKit\ToolKit.csproj", "{34290F81-3496-498E-AC72-3862766A8C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,22 @@ Global
 		{5ECE1E59-0D15-40B3-9EBF-FC2C082ACA4C}.Release|x86.ActiveCfg = Release|Any CPU
 		{5ECE1E59-0D15-40B3-9EBF-FC2C082ACA4C}.Release|x86.Build.0 = Release|Any CPU
 		{5ECE1E59-0D15-40B3-9EBF-FC2C082ACA4C}.Release|x86.Deploy.0 = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|ARM.Build.0 = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|x64.Build.0 = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Debug|x86.Build.0 = Debug|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|ARM.ActiveCfg = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|ARM.Build.0 = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|x64.ActiveCfg = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|x64.Build.0 = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|x86.ActiveCfg = Release|Any CPU
+		{34290F81-3496-498E-AC72-3862766A8C63}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

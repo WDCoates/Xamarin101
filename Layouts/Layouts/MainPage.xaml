@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tkit ="clr-namespace:ToolKit;assembly=ToolKit"
              xmlns:local="clr-namespace:Layouts"
              x:Class="Layouts.MainPage">
 
@@ -23,7 +24,7 @@
         <Label Text="StartAndExpand"  VerticalOptions="StartAndExpand" />
         <Label Text="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Blue" />
         <Label Text="EndAndExpand"    VerticalOptions="EndAndExpand" />
-        <Label Text="FillAndExpand"   VerticalOptions="FillAndExpand" />
+        <Label Text="FillAndExpand"   VerticalOptions="FillAndExpand" TextColor="{tkit:HslColour H=0.9375, S=1, L=0.5}"/>
 
     </StackLayout>
 

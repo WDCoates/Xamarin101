@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ToolKit\ToolKit.csproj" />
   </ItemGroup>
 </Project>
