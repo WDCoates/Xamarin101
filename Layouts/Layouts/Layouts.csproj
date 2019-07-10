@@ -16,4 +16,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ToolKit\ToolKit.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="XTools">
+      <HintPath>..\..\XTools\bin\Debug\netstandard2.0\XTools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
