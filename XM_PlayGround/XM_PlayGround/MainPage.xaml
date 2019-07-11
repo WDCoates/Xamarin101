@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:PCLTools="clr-namespace:PCLToolKit;assembly=PCLToolKit"
+             xmlns:local="clr-namespace:XM_PlayGround"
+             x:Class="XM_PlayGround.MainPage"
+             Title=" XMaster Playground ">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <PCLTools:BoolToColourConverter x:Key="boolToColour" TrueColour="Blue" FalseColour="Red" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="How many do you want?" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Slider x:Name="HowMany"
+                Minimum="-10" Maximum="10" />
+
+        <Label Text="{Binding Source={x:Reference HowMany}, Path=Value, StringFormat='I would like {0:F2}'}" 
+               TextColor="{Binding Source={x:Reference switch}, Path=IsToggled, Converter={StaticResource boolToColour}}"
+               />
+
+        <Switch x:Name="switch" HorizontalOptions="Center" />
+
+        <Button Text="Hello" HorizontalOptions="Center" IsVisible="False">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference switch}, Path=IsToggled}" Value="True">
+                    <Setter Property="IsVisible" Value="True" />
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>
